@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         'baconBlue': '#008ed2',
         'baconYellow': '#fce416',
+        'baconLightBlue': ' #00ade9'
       }
     },
   },
