@@ -1,16 +1,26 @@
-<div class="h-[80vh] w-full bg-baconBlue">
-  <div class="h-full w-full flex flex-col-reverse md:flex-row p-5">
-    <div class="h-full w-full md:w-1/2 rounded-2xl">
-      <img src="/assets/images/placeholder.png" class="h-full w-full object-contain" alt="">
+<div class="h-[80vh] w-full bg-baconDarkBlue relative">
+  <div class="w-[20vw] h-[20vh] absolute bottom-0 right-0 align-bottom justify-end">
+    <img src="/assets/images/yellow_shape_1.png" class="h-full w-full object-contain" alt="">
+  </div>
+  <div class="h-full w-full p-3 flex flex-col-reverse md:flex-row md:p-5 md:content-center md:items-center">
+    <div class="shrink h-[40%] w-full md:w-1/2 md:h-[70%] rounded-2xl relative">
+      <img [@enter]="visible" src="/assets/images/story_photo.png" class="h-full w-full object-contain" alt="">
+      <div class="w-1/4 h-1/4 absolute right-32 top-0">
+        <img src="/assets/images/yellow_stripes_2.png" alt="">
+      </div>
+      <div class="w-1/2 h-1/2 absolute -bottom-24 left-0">
+        <img src="/assets/images/yellow_stripes_1.png" class="object-contain"
+             alt="">
+      </div>
     </div>
-    <div
-      class="h-full w-full md:w-1/2 justify-center content-center text-white p-20 text-xl flex flex-col gap-5">
-      <p class="font-bold"> Historia de la empresa
+    <div appScrollTrigger (visible)="visible = true"
+      class="grow w-full p-2 gap-2 p-md:h-1/2 md:w-1/2 justify-center content-center text-white md:p-20 md:text-2xl flex flex-col md:gap-5">
+      <p class="font-bold text-3xl"> Historia de la empresa
       </p>
-      <p> Somos una empresa joven, formada por apasionados profesionales cuya experiencia en diversas organizaciones
+      <p class="text-justify"> Somos una empresa joven, formada por apasionados profesionales cuya experiencia en diversas organizaciones
         impulsa nuestro crecimiento.
       </p>
-      <p>Operamos en Chihuahua, Sonora, Baja California Norte y Sur, conectando a clientes a nivel nacional e
+      <p class="text-justify">Operamos en Chihuahua, Sonora, Baja California Norte y Sur, conectando a clientes a nivel nacional e
         internacional.
         Con un taller propio y personal especializado, hacemos realidad cualquier proyecto.</p>
     </div>

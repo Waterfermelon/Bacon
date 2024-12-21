@@ -1,14 +1,27 @@
-<div class="h-[80vh] bg-baconBlue w-full overflow-hidden flex">
-  <div class="h-full w-1/2 p-20">
-    <img src="/assets/images/placeholder.png" class="w-full h-full object-contain" alt="">
+<div class="h-[80vh] bg-baconDarkBlue w-full overflow-hidden flex flex-col-reverse md:flex-row relative">
+  <div class="absolute w-[25%] top-0 start-0">
+    <img src="/assets/images/yellow_stripes_3.png" class="w-full" alt="">
   </div>
-  <div class="h-full w-1/2 p-20 text-white font-bold content-center justify-center flex flex-col gap-5">
-    <p class="text-7xl">CONTACTO</p>
+  <div class="w-[90vw] absolute -end-[20vw] -bottom-[20vw]">
+    <img src="/assets/images/blue_circle.png" class="w-full h-full object-contain" alt="">
+  </div>
+  <div class="start-0 -left-[5vw] -bottom-[5vw] absolute w-[20vw] z-10">
+    <img src="/assets/images/yellow_circle.png" class="w-full h-full object-contain" alt="">
+  </div>
+  <div [@enter]="visible" class="md:h-full w-full md:w-1/2 p-4 md:p-20 z-20">
+    <img src="/assets/images/contact_photo.png" class="w-full h-full object-contain" alt="">
+  </div>
+  <div appScrollTrigger (visible)="visible = true" class="md:h-full w-full h2/3 md:w-1/2 p-4 md:p-20 text-white font-bold content-center justify-center flex flex-col gap-5 z-10 relative md:text-2xl">
+    <p class="text-2xl md:text-7xl">CONTACTO</p>
     <p>
       Av. Prol. Teófilo Borunda 11811-Local #13, 31207
       Chihuahua, Chih.</p>
     <p>614 561 3753</p>
     <p>614 477 1393</p>
     <p>ventas&#64;bacondesign.com.mx</p>
+    <div class="w-[15%] absolute end-0 bottom-0">
+      <img src="/assets/images/dots_pattern.png" class="w-full" alt="">
+
+    </div>
   </div>
 </div>

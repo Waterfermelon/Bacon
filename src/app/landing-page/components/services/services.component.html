@@ -1,13 +1,13 @@
-<div class="h-screen bg-white w-full flex flex-col">
-  <div class="grow flex justify-end h-2/3">
-    <div class="w-full flex flex-col justify-end md:flex-row">
-      <div class="w-3/4 flex flex-col p-3 md:p-20 text-baconBlue gap-4">
-        <p class="text-5xl font-bold">SERVICIOS</p>
+<div class="h-[80vh] bg-white w-full flex flex-col">
+  <div class="grow flex justify-end">
+    <div class="w-full flex flex-col justify-end align-middle content-center items-center md:flex-row">
+      <div class="w-3/4 flex flex-col p-3 md:p-20 text-baconBlue gap-4 md:text-2xl text-justify" appScrollTrigger (visible)="visible = true">
+        <p class="text-2xl md:text-5xl font-bold">SERVICIOS</p>
         <p>¿Por qué nosotros?</p>
         <p>Queremos TRANSMITIR lo que tu proyecto requiere, ya sea hacer las ideas tangibles o intangibles, todo esto
           para que logres alcanzar la meta, pero sobre todo que tu proyecto sea de CALIDAD.</p>
       </div>
-      <div class="w-1/4">
+      <div [@enter]="visible" class="hidden md:block w-1/4">
         <img src="/assets/images/christmas-tree.png" class="h-full w-full object-contain" alt="">
       </div>
     </div>

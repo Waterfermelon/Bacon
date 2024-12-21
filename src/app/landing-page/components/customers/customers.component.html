@@ -1,8 +1,23 @@
-<div class="h-[80vh] w-full bg-baconBlue flex p-12">
-  <div class="w-1/6 h-full" style="writing-mode: vertical-rl; text-orientation: mixed">
-    <p class="font-bold text-baconYellow text-6xl">Clientes</p>
+<div class="h-[80vh] w-full bg-baconDarkBlue flex flex-col md:flex-row p-12 justify-around md:justify-center">
+  <div class="hidden md:block h-full" style="writing-mode: vertical-rl; text-orientation: mixed">
+    <p class="font-bold text-baconYellow text-8xl">Clientes</p>
   </div>
-  <div class="w-5/6 h-full">
-    <img src="/assets/images/placeholder.png" class="w-full h-full object-contain" alt="">
+  <div class="hidden md:block h-full relative">
+    <div class="absolute top-0 -right-24 w-[20vw]">
+      <img src="/assets/images/yellow_stripes_3.png" alt="">
+    </div>
+    <img src="/assets/images/customers_photo.png" class="h-full object-contain" alt="">
+  </div>
+  <div class="md:hidden">
+    <div class="h-full">
+      <p class="font-bold text-baconYellow text-6xl">Clientes</p>
+    </div>
+  </div>
+  <div class="w-[80vw] overflow-auto md:hidden">
+    <div class="grow flex w-[60%] gap-12">
+      @for (item of cusotmerLogos; track $index){
+        <img src="/assets/images/customer_logos/{{item}}" class="object-contain" alt="">
+      }
+    </div>
   </div>
 </div>
