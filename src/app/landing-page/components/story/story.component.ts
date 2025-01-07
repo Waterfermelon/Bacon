@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
 import {fadeInLeftAnimation} from 'angular-animations';
 import {ScrollTriggerDirective} from '../../../../shared/directives/scroll-trigger.directive';
+import {TranslocoPipe} from '@jsverse/transloco';
 
 @Component({
   selector: 'app-story',
   imports: [
-    ScrollTriggerDirective
+    ScrollTriggerDirective,
+    TranslocoPipe
   ],
   templateUrl: './story.component.html',
   styleUrl: './story.component.css',

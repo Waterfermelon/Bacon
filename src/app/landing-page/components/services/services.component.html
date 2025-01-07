@@ -2,13 +2,12 @@
   <div class="grow flex justify-end">
     <div class="w-full flex flex-col justify-end align-middle content-center items-center md:flex-row">
       <div class="w-3/4 flex flex-col p-3 md:p-20 text-baconBlue gap-4 md:text-2xl text-justify" appScrollTrigger (visible)="visible = true">
-        <p class="text-2xl md:text-5xl font-bold">SERVICIOS</p>
-        <p>¿Por qué nosotros?</p>
-        <p>Queremos TRANSMITIR lo que tu proyecto requiere, ya sea hacer las ideas tangibles o intangibles, todo esto
-          para que logres alcanzar la meta, pero sobre todo que tu proyecto sea de CALIDAD.</p>
+        <p class="text-2xl md:text-5xl font-bold">{{ 'services.title' | transloco}}</p>
+        <p>{{ 'services.subTitle' | transloco }}</p>
+        <p>{{'services.body' | transloco}}</p>
       </div>
       <div [@enter]="visible" class="hidden md:block w-1/4">
-        <img src="/assets/images/christmas-tree.png" class="h-full w-full object-contain" alt="">
+        <img src="assets/images/christmas-tree.png" class="h-full w-full object-contain" alt="">
       </div>
     </div>
 
@@ -18,37 +17,30 @@
       <div
         class="w-full text-center p-3 text-baconBlue h-full bg-baconYellow rounded-t-2xl justify-center flex items-center md:rounded-tr-none md:w-1/2 lg:w-1/4">
         <div>
-          <p class="font-bold">EVENTOS CORPORATIVOS</p>
-          <p>Diseñamos y producimos experiencias memorables que refuerzan la identidad de tu marca, desde conferencias y
-            lanzamientos hasta celebraciones empresariales.</p>
+          <p class="font-bold">{{ 'services.cards.card1.title' | transloco }}</p>
+          <p>{{'services.cards.card1.body' | transloco}}</p>
         </div>
       </div>
       <div
         class="w-full text-center p-3 text-white h-full bg-baconBlue rounded-t-2xl justify-center flex items-center md:rounded-tr-none md:w-1/2 lg:w-1/4">
         <div>
-          <p class="font-bold">MARKETING
-            BTL</p>
-          <p> Creamos estrategias innovadoras y personalizadas para conectar con tu audiencia de manera directa, a
-            través
-            de activaciones, promociones y experiencias interactivas.</p>
+          <p class="font-bold">{{ 'services.cards.card2.title' | transloco }}</p>
+          <p> {{ 'services.cards.card2.body' | transloco }}</p>
         </div>
       </div>
       <div
         class="w-full text-center p-3 text-baconBlue h-full bg-baconYellow rounded-t-2xl justify-center flex items-center md:rounded-tr-none md:w-1/2 lg:w-1/4">
         <div>
-          <p class="font-bold">FOTO &
-            VIDEO</p>
-          <p>Capturamos la esencia de tu marca con producciones visuales de alta calidad, ideales para redes sociales,
-            publicidad y eventos.
+          <p class="font-bold">{{ 'services.cards.card3.title' | transloco }}</p>
+          <p>{{ 'services.cards.card3.body' | transloco }}
           </p>
         </div>
       </div>
       <div
         class="w-full text-center p-3 text-white h-full bg-baconBlue rounded-t-2xl justify-center flex items-center md:w-1/2 lg:w-1/4">
         <div>
-          <p class="font-bold">STANDS</p>
-          <p>Diseñamos y construimos stands creativos y funcionales que destacan en ferias, exposiciones y eventos,
-            asegurando una presencia impactante.
+          <p class="font-bold">{{ 'services.cards.card4.title' | transloco }}</p>
+          <p>{{ 'services.cards.card4.body' | transloco }}
           </p>
         </div>
       </div>

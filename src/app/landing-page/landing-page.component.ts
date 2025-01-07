@@ -7,6 +7,7 @@ import { MediaViewerComponent } from './components/media-viewer/media-viewer.com
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import {bounceInUpOnEnterAnimation, fadeInDownAnimation, fadeInDownOnEnterAnimation} from 'angular-animations';
 import {CommonModule} from '@angular/common';
+import {TranslocoPipe} from '@jsverse/transloco';
 
 @Component({
   selector: 'app-landing-page',
@@ -18,6 +19,7 @@ import {CommonModule} from '@angular/common';
     MediaViewerComponent,
     ContactPageComponent,
     CommonModule,
+    TranslocoPipe,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',

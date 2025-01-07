@@ -1,0 +1,51 @@
+{
+  "navBar": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "clients": "CLIENTS",
+    "portfolio": "PORTFOLIO",
+    "contact": "CONTACT",
+    "language": "ENGLISH"
+  },
+  "welcomeTitle": "We are an Design/MKT agency  that provides a\n360° service,  dedicated to connect  your\ncompany with the ideal customer.",
+  "aboutUs": {
+    "title": "ABOUT US",
+    "body": "We are a 360° agency that offers a complete experience, from brief to the final delivery of the project.\n\n\n\nOur creative and trained team is committed to the growth of your brand, connecting it with the right client and obtaining optimal results."
+  },
+  "services": {
+    "title": "SERVICES",
+    "subTitle": "Why us?",
+    "body": "Our commitment is to COMMUNICATE what your project needs, whether it is to materialize tangible ideas or develop intangible concepts. All of this is focused on helping you achieve your goals and, above all, ensuring that your project is of the HIGHEST QUALITY.",
+    "cards": {
+      "card1": {
+        "title": "GRAPHIC DESIGN",
+        "body": "Visual identity design, such as logos\nand style guides.\n\n\n\nDevelopment of brand positioning\nstrategies and key messages."
+      },
+      "card2": {
+        "title": "MARKETING\nCAMPAIGNS",
+        "body": "Specific strategies to position\nbusinesses in local areas using tools\nsuch as Google My Business.\n\nGeotargeting and hyperlocal\nmarketing campaigns."
+      },
+      "card3": {
+        "title": "PHOTO & \n\nVIDEO",
+        "body": "We capture the essence of your\nbrand with high-quality visual\nproductions, ideal for social media,\nadvertising and events."
+      },
+      "card4": {
+        "title": "WEB & DESIGN",
+        "body": "We create custom, visually stunning,\nand user-friendly websites designed\nto showcase your brand and engage\nyour audience."
+      }
+    }
+  },
+  "history": {
+    "title": "Company History\n\n",
+    "body": "We are a young company, formed by passionate professionals in marketing, design and communication, whose experience in various organizations has driven our growth.\n\n\n\nWe operate in Mexico, now expanding our borders to the United States, with specialized personnel, we make any project a reality."
+  },
+  "customers": {
+    "title": "CUSTOMERS"
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "address": "Av. Prol. Teófilo Borunda 11811, Zip code: 31207 \n\nChihuahua, Mexico.",
+    "phone": "+ 52 614 561 3753\n\n+ 52 614 477 1393",
+    "email": "ventas@bacondesign.com.mx"
+  }
+}

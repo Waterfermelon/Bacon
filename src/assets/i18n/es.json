@@ -1,0 +1,51 @@
+{
+  "navBar": {
+    "home": "INICIO",
+    "services": "SERVICIOS",
+    "clients": "CLIENTES",
+    "portfolio": "PORTAFOLIO",
+    "contact": "CONTACTO",
+    "language": "ESPAÑOL"
+  },
+  "welcomeTitle": "Somos una agencia que ofrece un servicio completo, con un equipo creativo enfocado en conectar tu empresa con el cliente ideal y obtener resultados óptimos.",
+  "aboutUs": {
+    "title": "NOSOTROS",
+    "body": "Somos una agencia 360° que ofrece una experiencia completa, desde la atención al cliente hasta la entrega final del proyecto.\n\nNuestro equipo creativo y capacitado está comprometido con el crecimiento de tu marca, conectándola con el cliente adecuado y obteniendo resultados óptimos."
+  },
+  "services": {
+    "title": "SERVICIOS",
+    "subTitle": "¿Por qué nosotros?\n\n",
+    "body": "Queremos TRANSMITIR lo que tu proyecto requiere, ya sea hacer las ideas tangibles o intangibles, todo esto para que logres alcanzar la meta, pero sobre todo que tu proyecto sea de CALIDAD.",
+    "cards": {
+      "card1": {
+        "title": "EVENTOS CORPORATIVOS\n\n",
+        "body": "Diseñamos y producimos experiencias memorables que refuerzan la identidad de tu marca, desde conferencias y lanzamientos hasta celebraciones empresariales."
+      },
+      "card2": {
+        "title": "MARKETING \nBTL",
+        "body": " Creamos estrategias innovadoras y personalizadas para conectar con tu audiencia de manera directa, a través de activaciones, promociones y experiencias interactivas."
+      },
+      "card3": {
+        "title": "FOTO & \nVIDEO",
+        "body": "Capturamos la esencia de tu marca con producciones visuales de alta calidad, ideales para redes sociales, publicidad y eventos."
+      },
+      "card4": {
+        "title": "STANDS",
+        "body": "Diseñamos y construimos stands creativos y funcionales que destacan en ferias, exposiciones y eventos, asegurando una presencia impactante."
+      }
+    }
+  },
+  "history": {
+    "title": "Historia de la empresa",
+    "body": "Somos una empresa joven, formada por apasionados profesionales cuya experiencia en diversas organizaciones impulsa nuestro crecimiento.\n\nOperamos en Chihuahua, Sonora, Baja California Norte y Sur, conectando a clientes a nivel nacional e internacional.\nCon un taller propio y personal especializado, hacemos realidad cualquier proyecto."
+  },
+  "customers": {
+    "title": "CLIENTES"
+  },
+  "contact": {
+    "title": "CONTACTO",
+    "address": "Av. Prol. Teófilo Borunda 11811-Local #13, 31207 \nChihuahua, Chih.",
+    "phone": "614 561 3753\n614 477 1393",
+    "email": "ventas@bacondesign.com.mx"
+  }
+}

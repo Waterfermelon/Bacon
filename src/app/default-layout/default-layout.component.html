@@ -8,7 +8,7 @@
             @for (item of navBarItems; track $index) {
               <li>
                 <a href="#" (click)="scrollToSection($event,  item.link)"
-                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-baconBlue font-bold md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{{ item.label }}</a>
+                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-baconBlue font-bold md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{{ item.label | transloco }}</a>
               </li>
             }
           </ul>
@@ -17,17 +17,27 @@
     </div>
     <div class="w-16 h-16">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="/assets/images/bacon_logo.png" class="" alt="Bacon Logo"/>
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <img src="assets/images/bacon_logo.png" class="" alt="Bacon Logo"/>
       </a>
     </div>
-    <div class="grow h-5 basis-0 content-center items-center flex justify-end">
+    <div class="grow h-5 basis-0 content-center items-center flex justify-end gap-10">
+      <div id="langPopup" class="relative">
+        <p class="text-baconBlue cursor-pointer" (click)="onClickLangPopUp()">
+          {{ 'navBar.language' | transloco }}
+        </p>
+        <div *ngIf="showLangPopup" class="bg-[#f2f2f2] absolute z-50">
+          <div class="p-4 flex flex-col gap-5">
+            <p class="cursor-pointer" (click)="onChangeLang('en')"> English </p>
+            <p class="cursor-pointer" (click)="onChangeLang('es')"> Español </p>
+          </div>
+        </div>
+      </div>
       <div class="flex justify-end content-center">
         <a href="https://www.facebook.com/baconatastydesign" target="_blank">
-          <img src="/assets/images/icons8-facebook-48.png" alt="">
+          <img src="assets/images/icons8-facebook-48.png" alt="">
         </a>
         <a href="https://www.instagram.com/bacon_atastydesign/" target="_blank">
-          <img src="/assets/images/icons8-instagram-48.png" alt="">
+          <img src="assets/images/icons8-instagram-48.png" alt="">
         </a>
 
       </div>
