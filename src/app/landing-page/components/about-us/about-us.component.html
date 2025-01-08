@@ -1,21 +1,14 @@
-<div class="h-[80vh] w-full flex flex-col">
-  <div class="bg-baconBlue grow max-h-16"></div>
-  <div class="bg-baconYellow grow p-12">
-    <div class="flex h-full flex-col md:flex-row justify-start md:justify-around">
-      <div class="w-full md:w-1/2 flex items-center justify-center text-baconBlue">
-        <p class="max-w-3xl text-lg font-bold text-justify translation" appScrollTrigger (visible)="visible = true"
-           *transloco="let t">
-          {{ 'aboutUs.title' | transloco }} <br> <br>
-          {{ 'aboutUs.body'  |transloco }}
-        </p>
-      </div>
-      <div *ngIf="visible" [@enter3]="visible"
-           class="h-1/2">
-        <div>
-          <img src="assets/images/cactus_image_2.png" alt="aboutUsImage">
-        </div>
-      </div>
+<div class="h-[80vh] w-full bg-baconYellow">
+  <div class="flex w-full h-full p-3 lg:p-12 flex-col md:flex-row items-center">
+    <div class="h-3/5 w-full flex items-center">
+      <p class="text-sm md:text-lg font-bold text-justify translation text-baconBlue" appScrollTrigger (visible)="visible = true">
+        {{ 'aboutUs.title' | transloco }} <br> <br>
+        {{ 'aboutUs.body'  |transloco }}
+      </p>
+    </div>
+    <div *ngIf="visible" [@enter3]="visible"  class="h-2/5 w-full md:h-full relative">
+      <img src="assets/images/cactus_image_2.png" alt="aboutUsImage" class="h-full absolute right-0">
+
     </div>
   </div>
-  <div class="bg-baconBlue grow max-h-16"></div>
 </div>

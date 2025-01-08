@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {AfterViewInit, Component, OnDestroy} from '@angular/core';
 import {TranslocoPipe} from '@jsverse/transloco';
 
 @Component({
@@ -9,7 +9,7 @@ import {TranslocoPipe} from '@jsverse/transloco';
   templateUrl: './customers.component.html',
   styleUrl: './customers.component.css'
 })
-export class CustomersComponent {
+export class CustomersComponent implements AfterViewInit, OnDestroy{
 
   public cusotmerLogos: string[] = [
     'logo_acero.png',
@@ -31,4 +31,24 @@ export class CustomersComponent {
     'logo_supply.png',
     'logo_syncro.png'
   ]
+
+  private scrollInterval: any;
+
+  ngAfterViewInit() {
+    const container = document.getElementById('customer-logos-container');
+    if (container) {
+      this.scrollInterval = setInterval(() => {
+        container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+          container.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+      }, 2500);
+    }
+  }
+
+  ngOnDestroy() {
+    if (this.scrollInterval) {
+      clearInterval(this.scrollInterval);
+    }
+  }
 }

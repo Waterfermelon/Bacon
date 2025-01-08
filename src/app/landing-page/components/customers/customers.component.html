@@ -1,6 +1,6 @@
-<div class="h-[80vh] w-full bg-baconDarkBlue flex flex-col md:flex-row p-12 justify-around md:justify-center">
+<div class="h-[60vh] md:h-[80vh] w-full bg-baconDarkBlue flex flex-col md:flex-row p-12 justify-around md:justify-center">
   <div class="hidden md:block h-full" style="writing-mode: vertical-rl; text-orientation: mixed">
-    <p class="font-bold text-baconYellow text-8xl">{{ 'customers.title' |transloco }}</p>
+    <p class="font-bold text-baconYellow text-6xl">{{ 'customers.title' |transloco }}</p>
   </div>
   <div class="hidden md:block h-full relative">
     <div class="absolute top-0 -right-24 w-[20vw]">
@@ -10,13 +10,13 @@
   </div>
   <div class="md:hidden">
     <div class="h-full">
-      <p class="font-bold text-baconYellow text-6xl">{{ 'customers.title' |transloco }}</p>
+      <p class="font-bold text-baconYellow text-4xl md:text-6xl">{{ 'customers.title' |transloco }}</p>
     </div>
   </div>
-  <div class="w-[80vw] overflow-auto md:hidden">
+  <div id="customer-logos-container" class="w-[80vw] mt-5 grow overflow-auto md:hidden">
     <div class="grow flex w-[60%] gap-12">
       @for (item of cusotmerLogos; track $index) {
-        <img src="assets/images/customer_logos/{{item}}" class="object-contain" alt="">
+        <img src="assets/images/customer_logos/{{item}}" class="h-full place-self-center" alt="">
       }
     </div>
   </div>
