@@ -33,4 +33,12 @@ export class LandingPageComponent {
 
   public showTitle: boolean = false;
 
+  scrollToServices(event: Event) {
+    const element = document.querySelector('#services');
+    if (element) {
+      event.preventDefault();
+      element.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
+  }
+
 }

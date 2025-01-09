@@ -14,7 +14,7 @@
   <p [@enter3] class="max-w-3xl text-center text-lg text-white md:text-xl">
     {{ 'welcomeTitle' | transloco }}
   </p>
-  <button [@enter3] class="text-white text-6xl mt-3 h-24 w-24 rounded-full bg-yellow-400">+</button>
+  <button [@enter3] (click)="scrollToServices($event)" class="text-white text-6xl mt-3 h-24 w-24 rounded-full bg-yellow-400">+</button>
 </div>
 <app-about-us></app-about-us>
 <app-services id="services"></app-services>
