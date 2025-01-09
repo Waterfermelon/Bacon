@@ -13,7 +13,7 @@ import {NgIf} from '@angular/common';
   templateUrl: './default-layout.component.html',
   styleUrl: './default-layout.component.css'
 })
-export class DefaultLayoutComponent{
+export class DefaultLayoutComponent {
 
   private translocoService = inject(TranslocoService);
 
@@ -28,17 +28,19 @@ export class DefaultLayoutComponent{
 
   scrollToSection(event: Event, sectionId: string) {
     const element = document.querySelector(sectionId);
-    if (element){
+    if (element) {
       event.preventDefault();
       element.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   }
 
   onClickLangPopUp() {
-    this.showLangPopup = !this.showLangPopup;
+    //alternate lang
+    const activeLang = this.translocoService.getActiveLang();
+    this.translocoService.setActiveLang(activeLang == 'es' ? 'en' : 'es');
   }
 
-  onChangeLang(lang: string){
+  onChangeLang(lang: string) {
     this.translocoService.setActiveLang(lang);
   }
 
